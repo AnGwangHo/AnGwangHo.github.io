@@ -1,0 +1,87 @@
+.bio {
+  min-width: 14rem;
+  width: 14rem;
+  margin-left: 2rem;
+
+  p,
+  span {
+    display: block;
+    margin: 0;
+    font-size: 0.9rem;
+  }
+
+  .bio-item {
+    margin-bottom: 0.8rem;
+    display: flex;
+    font-size: 0.9rem;
+
+    .icon-wrap {
+      display: inline-flex;
+      font-size: 0.9rem;
+      margin-right: 0.4rem;
+      min-width: 1.1rem;
+      width: 1.1rem;
+      justify-content: center;
+
+      svg {
+        margin-top: 1px;
+        color: #6a737d;
+        opacity: 0.9;
+      }
+    }
+
+    & > :nth-child(2) {
+      // border: 1px solid red;
+      line-height: 1.1;
+      overflow: hidden;
+    }
+
+    &.name,
+    &.company,
+    &.location {
+      cursor: default;
+    }
+  }
+
+  .comment {
+    margin-bottom: 1rem;
+  }
+
+  .social {
+    margin-left: 0.2rem;
+    margin-top: 2rem;
+
+    a {
+      display: inline-flex;
+      font-size: 1.3rem;
+      margin-right: 0.5rem;
+
+      .linkedin,
+      .facebook,
+      .instagram,
+      .github,
+      .rss {
+        color: #6a737d;
+        transition: color 0.3s;
+      }
+
+      &:hover {
+        .rss {
+          color: rgb(226, 143, 72);
+        }
+        .linkedin {
+          color: #0077b5;
+        }
+        .facebook {
+          color: #1877f2;
+        }
+        .instagram {
+          color: #e4405f;
+        }
+        .github {
+          color: #181717;
+        }
+      }
+    }
+  }
+}
