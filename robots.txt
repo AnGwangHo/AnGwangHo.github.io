@@ -1,2 +1,4 @@
 User-agent: *
-Disallow:
+Allow: /
+Sitemap: https://angwangho.github.io/sitemap.xml
+Host: https://angwangho.github.io

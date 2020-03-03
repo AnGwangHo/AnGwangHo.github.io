@@ -1,144 +1,179 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[AnGwangHo Blog]]></title><description><![CDATA[An GwangHo develop issue and etc blog]]></description><link>https://angwangho.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 02 Mar 2020 05:03:02 GMT</lastBuildDate><item><title><![CDATA[New Beginnings]]></title><description><![CDATA[Far far away, behind the word mountains, far from the countries Vokalia and
-Consonantia, there live the blind texts. Separated they live in…]]></description><link>https://angwangho.github.io/new-beginnings/</link><guid isPermaLink="false">https://angwangho.github.io/new-beginnings/</guid><pubDate>Thu, 28 May 2015 22:40:32 GMT</pubDate><content:encoded>&lt;p&gt;Far far away, behind the word mountains, far from the countries Vokalia and
-Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
-right at the coast of the Semantics, a large language ocean. A small river named
-Duden flows by their place and supplies it with the necessary regelialia.&lt;/p&gt;
-&lt;h2&gt;On deer horse aboard tritely yikes and much&lt;/h2&gt;
-&lt;p&gt;The Big Oxmox advised her not to do so, because there were thousands of bad
-Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
-didn’t listen. She packed her seven versalia, put her initial into the belt and
-made herself on the way.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[이것저것 | Feed]]></title><description><![CDATA[AnGwangHo Development Blog]]></description><link>https://angwangho.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 03 Mar 2020 04:54:14 GMT</lastBuildDate><item><title><![CDATA[IE8 Split Bug]]></title><description><![CDATA[split()함수에 Regex를 사용 시 ""값이 return되지 않는 문제 고객이 네트워크 속도 문제로 인해 필요없는 파일을 load하지 않기로 하였다. 이에 대해서 특정 js파일을 load제외하였는데 그로인해 IE8에서 textsize…]]></description><link>https://angwangho.github.io/IE8-Split-Bug/</link><guid isPermaLink="false">https://angwangho.github.io/IE8-Split-Bug/</guid><pubDate>Tue, 03 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;split함수에-regex를-사용-시-값이-return되지-않는-문제&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#split%ED%95%A8%EC%88%98%EC%97%90-regex%EB%A5%BC-%EC%82%AC%EC%9A%A9-%EC%8B%9C-%EA%B0%92%EC%9D%B4-return%EB%90%98%EC%A7%80-%EC%95%8A%EB%8A%94-%EB%AC%B8%EC%A0%9C&quot; aria-label=&quot;split함수에 regex를 사용 시 값이 return되지 않는 문제 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;split()함수에 Regex를 사용 시 &quot;&quot;값이 return되지 않는 문제&lt;/h1&gt;
+&lt;p&gt;고객이 네트워크 속도 문제로 인해 필요없는 파일을 load하지 않기로 하였다. 이에 대해서 특정 js파일을 load제외하였는데 그로인해 IE8에서 textsize를 계산할 때 다른점이 발견되었다.
+이러한 부분을 조사 중 IE8에서 split()에 정규식 공백문자(&quot; &quot;)를 사용 시 반환되는 배열에 empty string(&quot;&quot;)값이 제외되는 문제가 발생하였다.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;This however showed weasel&lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Well uncritical so misled&lt;/p&gt;
+&lt;p&gt;String.split() syntax&lt;/p&gt;
+&lt;p&gt;String.split([separator[, limit]])
+separator : 끊을 문자 or 정규식
+limit : 몇 개 까지 자를 지에 대한 숫자&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;만약 &quot; ab c d e fg 123 &quot;와 같은 문자열이 있다고 하자. 이 문자열에 대하여 &quot; &quot; 공백문자를 기준으로 자르고자 한다. 그렇다면 split()함수에 &quot; &quot;공백을 인자로 사용 시 &quot;&quot;을 포함한 배열이 반환 될 것이다. 근데, 만약 정규식을 사용 한다면 어떻게 될까?&lt;/p&gt;
+&lt;p&gt;보통 정규식을 사용 시 다음과 같이 사용을 할 것이다&lt;/p&gt;
+&lt;p&gt;var reg = /abc/;
+var reg = new RegExp(&quot;abc&quot;);&lt;/p&gt;
+&lt;p&gt;두 방식의 차이는 컴파일 시점의 차이로 첫 번째 방식의 경우 스크립트가 load되는 시점에 컴파일 되며 두 번째의 경우는 정규식이 실행되는 시점에 컴파일 된다. 만약, 상수와 같이 고정된 조건에 대해서 사용하는 경우 첫 번째 방식을 사용하며, 조건이 변경되는 경우는 두 번째 방식을 사용하면 될 것이다.&lt;/p&gt;
+&lt;h2 id=&quot;테스트&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%85%8C%EC%8A%A4%ED%8A%B8&quot; aria-label=&quot;테스트 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;테스트&lt;/h2&gt;
+&lt;p&gt;실행결과의 경우 아래에서 확인 가능하며, 해당 파일은 GitHub 저장소에 업로드되어있다.(&lt;a href=&quot;https://github.com/AnGwangHo/sampleFile&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;strong&gt;저장소&lt;/strong&gt;&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://angwangho.github.io/sampleFile/window_method/split.html&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://angwangho.github.io/sampleFile/window_method/split.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;위 샘플에서 확인하였듯이 split()에 정규식을 사용하게 된다면 아래와 같이 empty stirng이 제외된 결과가 나올 것이다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;//IE8 이하
+&amp;quot;   ab c d e   fg 123   &amp;quot;.split(&amp;quot; &amp;quot;); //[&amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;ab&amp;quot;, &amp;quot;c&amp;quot;, &amp;quot;d&amp;quot;, &amp;quot;e&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;fg&amp;quot;, &amp;quot;123&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;]
+&amp;quot;   ab c d e   fg 123   &amp;quot;.split(/\s/); //[&amp;quot;ab&amp;quot;, &amp;quot;c&amp;quot;, &amp;quot;d&amp;quot;, &amp;quot;e&amp;quot;, &amp;quot;fg&amp;quot;, &amp;quot;123&amp;quot;]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위 방식의 경우 동일하게 스페이스 문자를 기준으로 자르도록 하였다. 그러나 결과는 다르게 발생되었다. 문자열로 공백 문자를 인자로 준 경우 empty string값이 포함되어 배열이 반환되었으나 정규식을 사용한 경우 &quot;&quot;인 값들이 제외되고 배열이 반환되었다. 이를 해결하고자 다음과 같은 방안을 세우고 시도를 해보았다.&lt;/p&gt;
+&lt;h2 id=&quot;해결방안&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%95%B4%EA%B2%B0%EB%B0%A9%EC%95%88&quot; aria-label=&quot;해결방안 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;해결방안&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;del&gt;new RegExp(&quot;\s&quot;)를 사용&lt;/del&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;this is very interesting&lt;/li&gt;
+&lt;li&gt;&quot;&quot;값이 제외되어 반환&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Goodness much until that fluid owl&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;del&gt;정규식 문법을 수정&lt;/del&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;다양한 방법으로 조건을 변경하였으나 &quot;&quot;값이 제외되어 반환되었다.
+ex) /(\s)/, /[\s\xA0]/, / /g, /[ \f\n\r\t\v]/, /\u0020/(공백문자 유니코드)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;When she reached the first hills of the &lt;strong&gt;Italic Mountains&lt;/strong&gt;, she had a last
-view back on the skyline of her hometown &lt;em&gt;Bookmarksgrove&lt;/em&gt;, the headline of
-&lt;a href=&quot;http://google.com&quot;&gt;Alphabet Village&lt;/a&gt; and the subline of her own road, the Line
-Lane. Pityful a rhetoric question ran over her cheek, then she continued her
-way. On her way she met a copy.&lt;/p&gt;
-&lt;h3&gt;Overlaid the jeepers uselessly much excluding&lt;/h3&gt;
-&lt;p&gt;But nothing the copy said could convince her and so it didn’t take long until a
-few insidious Copy Writers ambushed her, made her drunk with
-&lt;a href=&quot;http://google.com&quot;&gt;Longe and Parole&lt;/a&gt; and dragged her into their agency, where
-they abused her for their projects again and again. And if she hasn’t been
-rewritten, then they are still using her.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Far far away, behind the word mountains, far from the countries Vokalia and
-Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
-right at the coast of the Semantics, a large language ocean.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;It is a paradisematic country, in which roasted parts of sentences fly into your
-mouth. Even the all-powerful Pointing has no control about the blind texts it is
-an almost unorthographic life One day however a small line of blind text by the
-name of Lorem Ipsum decided to leave for the far World of Grammar.&lt;/p&gt;
-&lt;h3&gt;According a funnily until pre-set or arrogant well cheerful&lt;/h3&gt;
-&lt;p&gt;The Big Oxmox advised her not to do so, because there were thousands of bad
-Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
-didn’t listen. She packed her seven versalia, put her initial into the belt and
-made herself on the way.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;So baboon this&lt;/li&gt;
-&lt;li&gt;Mounted militant weasel gregariously admonishingly straightly hey&lt;/li&gt;
-&lt;li&gt;Dear foresaw hungry and much some overhung&lt;/li&gt;
-&lt;li&gt;Rash opossum less because less some amid besides yikes jeepers frenetic
-impassive fruitlessly shut&lt;/li&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;When she reached the first hills of the Italic Mountains, she had a last view
-back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet
-Village and the subline of her own road, the Line Lane. Pityful a rhetoric
-question ran over her cheek, then she continued her way. On her way she met a
-copy.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The copy warned the Little Blind Text, that where it came from it would have
-been rewritten a thousand times and everything that was left from its origin
-would be the word “and” and the Little Blind Text should turn around and
-return to its own, safe country.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;But nothing the copy said could convince her and so it didn’t take long until a
-few insidious Copy Writers ambushed her, made her drunk with Longe and Parole
-and dragged her into their agency, where they abused her for their projects
-again and again. And if she hasn’t been rewritten, then they are still using
-her. Far far away, behind the word mountains, far from the countries Vokalia and
-Consonantia, there live the blind texts.&lt;/p&gt;
-&lt;h4&gt;Silent delightfully including because before one up barring chameleon&lt;/h4&gt;
-&lt;p&gt;Separated they live in Bookmarksgrove right at the coast of the Semantics, a
-large language ocean. A small river named Duden flows by their place and
-supplies it with the necessary regelialia. It is a paradisematic country, in
-which roasted parts of sentences fly into your mouth.&lt;/p&gt;
-&lt;p&gt;Even the all-powerful Pointing has no control about the blind texts it is an
-almost unorthographic life One day however a small line of blind text by the
-name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox
-advised her not to do so, because there were thousands of bad Commas, wild
-Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.&lt;/p&gt;
-&lt;h5&gt;Wherever far wow thus a squirrel raccoon jeez jaguar this from along&lt;/h5&gt;
-&lt;p&gt;She packed her seven versalia, put her initial into the belt and made herself on
-the way. When she reached the first hills of the Italic Mountains, she had a
-last view back on the skyline of her hometown Bookmarksgrove, the headline of
-Alphabet Village and the subline of her own road, the Line Lane. Pityful a
-rhetoric question ran over her cheek, then she continued her way. On her way she
-met a copy.&lt;/p&gt;
-&lt;h6&gt;Slapped cozy a that lightheartedly and far&lt;/h6&gt;
-&lt;p&gt;The copy warned the Little Blind Text, that where it came from it would have
-been rewritten a thousand times and everything that was left from its origin
-would be the word “and” and the Little Blind Text should turn around and return
-to its own, safe country. But nothing the copy said could convince her and so it
-didn’t take long until a few insidious Copy Writers ambushed her, made her drunk
-with Longe and Parole and dragged her into their agency, where they abused her
-for their projects again and again.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[My Second Post!]]></title><description><![CDATA[Wow! I love blogging so much already. Did you know that “despite its name, salted duck eggs can also be made from
-chicken eggs, though the…]]></description><link>https://angwangho.github.io/my-second-post/</link><guid isPermaLink="false">https://angwangho.github.io/my-second-post/</guid><pubDate>Wed, 06 May 2015 23:46:37 GMT</pubDate><content:encoded>&lt;p&gt;Wow! I love blogging so much already.&lt;/p&gt;
-&lt;p&gt;Did you know that “despite its name, salted duck eggs can also be made from
-chicken eggs, though the taste and texture will be somewhat different, and the
-egg yolk will be less rich.”?
-(&lt;a href=&quot;http://en.wikipedia.org/wiki/Salted_duck_egg&quot;&gt;Wikipedia Link&lt;/a&gt;)&lt;/p&gt;
-&lt;p&gt;Yeah, I didn’t either.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hello World]]></title><description><![CDATA[This is my first post on my new fake blog! How exciting! I’m sure I’ll write a lot more interesting things in the future. Oh, and here’s a…]]></description><link>https://angwangho.github.io/hello-world/</link><guid isPermaLink="false">https://angwangho.github.io/hello-world/</guid><pubDate>Fri, 01 May 2015 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;This is my first post on my new fake blog! How exciting!&lt;/p&gt;
-&lt;p&gt;I’m sure I’ll write a lot more interesting things in the future.&lt;/p&gt;
-&lt;p&gt;Oh, and here’s a great quote from this Wikipedia on
-&lt;a href=&quot;http://en.wikipedia.org/wiki/Salted_duck_egg&quot;&gt;salted duck eggs&lt;/a&gt;.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;A salted duck egg is a Chinese preserved food product made by soaking duck
-eggs in brine, or packing each egg in damp, salted charcoal. In Asian
-supermarkets, these eggs are sometimes sold covered in a thick layer of salted
-charcoal paste. The eggs may also be sold with the salted paste removed,
-wrapped in plastic, and vacuum packed. From the salt curing process, the
-salted duck eggs have a briny aroma, a gelatin-like egg white and a
-firm-textured, round yolk that is bright orange-red in color.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/8058f3f26913fea3b6a89a73344fe94a/e1596/salty_egg.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAMB/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAEEBf/aAAwDAQACEAMQAAABgik0dXC//8QAGRABAAMBAQAAAAAAAAAAAAAAAQACEhEy/9oACAEBAAEFAkqW2DlnRj73yf/EABcRAQADAAAAAAAAAAAAAAAAAAAREkH/2gAIAQMBAT8B1WX/xAAWEQEBAQAAAAAAAAAAAAAAAAAAEQL/2gAIAQIBAT8Bi6f/xAAbEAABBAMAAAAAAAAAAAAAAAAAAQIRISIxMv/aAAgBAQAGPwK9GNocyS8hCj//xAAbEAADAQADAQAAAAAAAAAAAAABESEAMUGBof/aAAgBAQABPyGxNMfrLHmCDZmAzzvJJDjEQCHv/9oADAMBAAIAAwAAABDIL//EABYRAQEBAAAAAAAAAAAAAAAAAAERAP/aAAgBAwEBPxARhylZv//EABgRAAIDAAAAAAAAAAAAAAAAAAABESFR/9oACAECAQE/EFoktI//xAAdEAEBAAICAwEAAAAAAAAAAAABEQAxIWFBcYHh/9oACAEBAAE/EEbMLQ0fMHDVaPIXyI4pk4JUnWacNCtO8ojDE9TGIYES7/Jn/9k=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Chinese Salty Egg&quot;
-        title=&quot;Chinese Salty Egg&quot;
-        src=&quot;/static/8058f3f26913fea3b6a89a73344fe94a/1c72d/salty_egg.jpg&quot;
-        srcset=&quot;/static/8058f3f26913fea3b6a89a73344fe94a/a80bd/salty_egg.jpg 148w,
-/static/8058f3f26913fea3b6a89a73344fe94a/1c91a/salty_egg.jpg 295w,
-/static/8058f3f26913fea3b6a89a73344fe94a/1c72d/salty_egg.jpg 590w,
-/static/8058f3f26913fea3b6a89a73344fe94a/a8a14/salty_egg.jpg 885w,
-/static/8058f3f26913fea3b6a89a73344fe94a/fbd2c/salty_egg.jpg 1180w,
-/static/8058f3f26913fea3b6a89a73344fe94a/e1596/salty_egg.jpg 2048w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;위와 같은 해결방안을 세우고 시도하였으나 &quot;&quot;값이 제외되고 반환되었다. 따로 해결이 가능한 부분이 없었으며 다음과 같은 결론을 내렸다.&lt;/p&gt;
+&lt;h2 id=&quot;처리결과&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%B2%98%EB%A6%AC%EA%B2%B0%EA%B3%BC&quot; aria-label=&quot;처리결과 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;처리결과&lt;/h2&gt;
+&lt;p&gt;우선적으로 고객이 제외한 js파일에서 String.split함수에 대해서 오버라이딩이 되어있어 IE8이하에서 split(/\s/)시 &quot;&quot;값이 포함된 배열이 반환되었다. 이러한 부분에 대해서 고객에게 split함수에 대해서 오버라이딩된 코드를 적용하도록 가이드하였다. 만약, 외부에서 IE8이하 브라우저를 지원해야하는 경우가 존재한다면 아래의 코드를 적용하면 된다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;코드&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;/*!
+ * Cross-Browser Split 1.1.1
+ * Copyright 2007-2012 Steven Levithan &amp;lt;stevenlevithan.com&amp;gt;
+ * Available under the MIT License
+ * ECMAScript compliant, uniform cross-browser split method
+ */
+
+/**
+ * Splits a string into an array of strings using a regex or string separator. Matches of the
+ * separator are not included in the result array. However, if `separator` is a regex that contains
+ * capturing groups, backreferences are spliced into the result each time `separator` is matched.
+ * Fixes browser bugs compared to the native `String.prototype.split` and can be used reliably
+ * cross-browser.
+ * @param {String} str String to split.
+ * @param {RegExp|String} separator Regex or string to use for separating the string.
+ * @param {Number} [limit] Maximum number of items to include in the result array.
+ * @returns {Array} Array of substrings.
+ * @example
+ *
+ * // Basic use
+ * split(&amp;#39;a b c d&amp;#39;, &amp;#39; &amp;#39;);
+ * // -&amp;gt; [&amp;#39;a&amp;#39;, &amp;#39;b&amp;#39;, &amp;#39;c&amp;#39;, &amp;#39;d&amp;#39;]
+ *
+ * // With limit
+ * split(&amp;#39;a b c d&amp;#39;, &amp;#39; &amp;#39;, 2);
+ * // -&amp;gt; [&amp;#39;a&amp;#39;, &amp;#39;b&amp;#39;]
+ *
+ * // Backreferences in result array
+ * split(&amp;#39;..word1 word2..&amp;#39;, /([a-z]+)(\d+)/i);
+ * // -&amp;gt; [&amp;#39;..&amp;#39;, &amp;#39;word&amp;#39;, &amp;#39;1&amp;#39;, &amp;#39; &amp;#39;, &amp;#39;word&amp;#39;, &amp;#39;2&amp;#39;, &amp;#39;..&amp;#39;]
+ */
+var split;
+
+// Avoid running twice; that would break the `nativeSplit` reference
+split = split || function (undef) {
+
+    var nativeSplit = String.prototype.split,
+        compliantExecNpcg = /()??/.exec(&amp;quot;&amp;quot;)[1] === undef, // NPCG: nonparticipating capturing group
+        self;
+
+    self = function (str, separator, limit) {
+        // If `separator` is not a regex, use `nativeSplit`
+        if (Object.prototype.toString.call(separator) !== &amp;quot;[object RegExp]&amp;quot;) {
+            return nativeSplit.call(str, separator, limit);
+        }
+        var output = [],
+            flags = (separator.ignoreCase ? &amp;quot;i&amp;quot; : &amp;quot;&amp;quot;) +
+                    (separator.multiline  ? &amp;quot;m&amp;quot; : &amp;quot;&amp;quot;) +
+                    (separator.extended   ? &amp;quot;x&amp;quot; : &amp;quot;&amp;quot;) + // Proposed for ES6
+                    (separator.sticky     ? &amp;quot;y&amp;quot; : &amp;quot;&amp;quot;), // Firefox 3+
+            lastLastIndex = 0,
+            // Make `global` and avoid `lastIndex` issues by working with a copy
+            separator = new RegExp(separator.source, flags + &amp;quot;g&amp;quot;),
+            separator2, match, lastIndex, lastLength;
+        str += &amp;quot;&amp;quot;; // Type-convert
+        if (!compliantExecNpcg) {
+            // Doesn&amp;#39;t need flags gy, but they don&amp;#39;t hurt
+            separator2 = new RegExp(&amp;quot;^&amp;quot; + separator.source + &amp;quot;$(?!\\s)&amp;quot;, flags);
+        }
+        /* Values for `limit`, per the spec:
+         * If undefined: 4294967295 // Math.pow(2, 32) - 1
+         * If 0, Infinity, or NaN: 0
+         * If positive number: limit = Math.floor(limit); if (limit &amp;gt; 4294967295) limit -= 4294967296;
+         * If negative number: 4294967296 - Math.floor(Math.abs(limit))
+         * If other: Type-convert, then use the above rules
+         */
+        limit = limit === undef ?
+            -1 &amp;gt;&amp;gt;&amp;gt; 0 : // Math.pow(2, 32) - 1
+            limit &amp;gt;&amp;gt;&amp;gt; 0; // ToUint32(limit)
+        while (match = separator.exec(str)) {
+            // `separator.lastIndex` is not reliable cross-browser
+            lastIndex = match.index + match[0].length;
+            if (lastIndex &amp;gt; lastLastIndex) {
+                output.push(str.slice(lastLastIndex, match.index));
+                // Fix browsers whose `exec` methods don&amp;#39;t consistently return `undefined` for
+                // nonparticipating capturing groups
+                if (!compliantExecNpcg &amp;amp;&amp;amp; match.length &amp;gt; 1) {
+                    match[0].replace(separator2, function () {
+                        for (var i = 1; i &amp;lt; arguments.length - 2; i++) {
+                            if (arguments[i] === undef) {
+                                match[i] = undef;
+                            }
+                        }
+                    });
+                }
+                if (match.length &amp;gt; 1 &amp;amp;&amp;amp; match.index &amp;lt; str.length) {
+                    Array.prototype.push.apply(output, match.slice(1));
+                }
+                lastLength = match[0].length;
+                lastLastIndex = lastIndex;
+                if (output.length &amp;gt;= limit) {
+                    break;
+                }
+            }
+            if (separator.lastIndex === match.index) {
+                separator.lastIndex++; // Avoid an infinite loop
+            }
+        }
+        if (lastLastIndex === str.length) {
+            if (lastLength || !separator.test(&amp;quot;&amp;quot;)) {
+                output.push(&amp;quot;&amp;quot;);
+            }
+        } else {
+            output.push(str.slice(lastLastIndex));
+        }
+        return output.length &amp;gt; limit ? output.slice(0, limit) : output;
+    };
+
+    // For convenience
+    String.prototype.split = function (separator, limit) {
+        return self(this, separator, limit);
+    };
+
+    return self;
+
+}();&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;참고자료&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%B0%B8%EA%B3%A0%EC%9E%90%EB%A3%8C&quot; aria-label=&quot;참고자료 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;참고자료&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;정규식 테스트 사이트&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.regextester.com/105851&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Non breaking space - Regex Tester/Debugger&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;MS 공식 사이트&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/previous-versions//1400241x(v=vs.85)?redirectedfrom=MSDN&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Regular Expression Syntax (Scripting)&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;split 함수 재정의코드&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://blog.stevenlevithan.com/archives/cross-browser-split&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;JavaScript split Bugs: Fixed!&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item></channel></rss>
