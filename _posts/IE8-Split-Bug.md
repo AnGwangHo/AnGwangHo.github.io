@@ -19,9 +19,9 @@ keywords:
 <summary>💡 String.split() syntax</summary>
 
 ```javascript
-  String.split([separator[, limit]])
-  separator : 끊을 문자 or 정규식
-  limit : 몇 개 까지 자를 지에 대한 숫자
+String.split([separator[, limit]])
+separator : 끊을 문자 or 정규식
+limit : 몇 개 까지 자를 지에 대한 숫자
 ```
 
 </details>
