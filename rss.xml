@@ -1,26 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[이것저것 | Feed]]></title><description><![CDATA[AnGwangHo Development Blog]]></description><link>https://angwangho.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 03 Mar 2020 04:54:14 GMT</lastBuildDate><item><title><![CDATA[IE8 Split Bug]]></title><description><![CDATA[split()함수에 Regex를 사용 시 ""값이 return되지 않는 문제 고객이 네트워크 속도 문제로 인해 필요없는 파일을 load하지 않기로 하였다. 이에 대해서 특정 js파일을 load제외하였는데 그로인해 IE8에서 textsize…]]></description><link>https://angwangho.github.io/IE8-Split-Bug/</link><guid isPermaLink="false">https://angwangho.github.io/IE8-Split-Bug/</guid><pubDate>Tue, 03 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;split함수에-regex를-사용-시-값이-return되지-않는-문제&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#split%ED%95%A8%EC%88%98%EC%97%90-regex%EB%A5%BC-%EC%82%AC%EC%9A%A9-%EC%8B%9C-%EA%B0%92%EC%9D%B4-return%EB%90%98%EC%A7%80-%EC%95%8A%EB%8A%94-%EB%AC%B8%EC%A0%9C&quot; aria-label=&quot;split함수에 regex를 사용 시 값이 return되지 않는 문제 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;split()함수에 Regex를 사용 시 &quot;&quot;값이 return되지 않는 문제&lt;/h1&gt;
-&lt;p&gt;고객이 네트워크 속도 문제로 인해 필요없는 파일을 load하지 않기로 하였다. 이에 대해서 특정 js파일을 load제외하였는데 그로인해 IE8에서 textsize를 계산할 때 다른점이 발견되었다.
-이러한 부분을 조사 중 IE8에서 split()에 정규식 공백문자(&quot; &quot;)를 사용 시 반환되는 배열에 empty string(&quot;&quot;)값이 제외되는 문제가 발생하였다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;String.split() syntax&lt;/p&gt;
-&lt;p&gt;String.split([separator[, limit]])
-separator : 끊을 문자 or 정규식
-limit : 몇 개 까지 자를 지에 대한 숫자&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[이것저것 | Feed]]></title><description><![CDATA[AnGwangHo Development Blog]]></description><link>https://angwangho.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 04 Mar 2020 02:46:37 GMT</lastBuildDate><item><title><![CDATA[IE8 Split Bug]]></title><description><![CDATA[split()함수에 Regex를 사용 시 ""값이 return되지 않는 문제 고객이 네트워크 속도 문제로 인해 필요없는 파일을 load하지 않기로 하였다. 이에 대해서 특정 js파일을 load제외하였는데 그로인해 IE8에서 textsize…]]></description><link>https://angwangho.github.io/IE8-Split-Bug/</link><guid isPermaLink="false">https://angwangho.github.io/IE8-Split-Bug/</guid><pubDate>Tue, 03 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;split함수에-regex를-사용-시-값이-return되지-않는-문제&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#split%ED%95%A8%EC%88%98%EC%97%90-regex%EB%A5%BC-%EC%82%AC%EC%9A%A9-%EC%8B%9C-%EA%B0%92%EC%9D%B4-return%EB%90%98%EC%A7%80-%EC%95%8A%EB%8A%94-%EB%AC%B8%EC%A0%9C&quot; aria-label=&quot;split함수에 regex를 사용 시 값이 return되지 않는 문제 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;split()함수에 Regex를 사용 시 &quot;&quot;값이 return되지 않는 문제&lt;/h1&gt;
+&lt;p&gt;고객이 네트워크 속도 문제로 인해 필요없는 파일을 load하지 않기로 하였다. 이에 대해서 특정 js파일을 load제외하였는데 그로인해 IE8에서 textsize를 계산할 때 다른점이 발견되었다. 이러한 부분을 조사 중 IE8에서 split()에 정규식 공백문자(&quot; &quot;)를 사용 시 반환되는 배열에 empty string(&quot;&quot;)값이 제외되는 문제가 발생하였다.&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;💡 String.split() syntax&lt;/summary&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;  String&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;separator&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; limit&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  separator &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; 끊을 문자 or 정규식
+  limit &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; 몇 개 까지 자를 지에 대한 숫자&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/details&gt;
 &lt;p&gt;만약 &quot; ab c d e fg 123 &quot;와 같은 문자열이 있다고 하자. 이 문자열에 대하여 &quot; &quot; 공백문자를 기준으로 자르고자 한다. 그렇다면 split()함수에 &quot; &quot;공백을 인자로 사용 시 &quot;&quot;을 포함한 배열이 반환 될 것이다. 근데, 만약 정규식을 사용 한다면 어떻게 될까?&lt;/p&gt;
 &lt;p&gt;보통 정규식을 사용 시 다음과 같이 사용을 할 것이다&lt;/p&gt;
-&lt;p&gt;var reg = /abc/;
-var reg = new RegExp(&quot;abc&quot;);&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; reg &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/abc/&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; reg &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;RegExp&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;abc&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;두 방식의 차이는 컴파일 시점의 차이로 첫 번째 방식의 경우 스크립트가 load되는 시점에 컴파일 되며 두 번째의 경우는 정규식이 실행되는 시점에 컴파일 된다. 만약, 상수와 같이 고정된 조건에 대해서 사용하는 경우 첫 번째 방식을 사용하며, 조건이 변경되는 경우는 두 번째 방식을 사용하면 될 것이다.&lt;/p&gt;
 &lt;h2 id=&quot;테스트&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%85%8C%EC%8A%A4%ED%8A%B8&quot; aria-label=&quot;테스트 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;테스트&lt;/h2&gt;
 &lt;p&gt;실행결과의 경우 아래에서 확인 가능하며, 해당 파일은 GitHub 저장소에 업로드되어있다.(&lt;a href=&quot;https://github.com/AnGwangHo/sampleFile&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;strong&gt;저장소&lt;/strong&gt;&lt;/a&gt;)&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://angwangho.github.io/sampleFile/window_method/split.html&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://angwangho.github.io/sampleFile/window_method/split.html&lt;/a&gt;&lt;/p&gt;
+&lt;iframe width=&quot;100%&quot; height=&quot;300&quot; src=&quot;https://angwangho.github.io/sampleFile/window_method/split.html&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;p&gt;위 샘플에서 확인하였듯이 split()에 정규식을 사용하게 된다면 아래와 같이 empty stirng이 제외된 결과가 나올 것이다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;//IE8 이하
-&amp;quot;   ab c d e   fg 123   &amp;quot;.split(&amp;quot; &amp;quot;); //[&amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;ab&amp;quot;, &amp;quot;c&amp;quot;, &amp;quot;d&amp;quot;, &amp;quot;e&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;fg&amp;quot;, &amp;quot;123&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;]
-&amp;quot;   ab c d e   fg 123   &amp;quot;.split(/\s/); //[&amp;quot;ab&amp;quot;, &amp;quot;c&amp;quot;, &amp;quot;d&amp;quot;, &amp;quot;e&amp;quot;, &amp;quot;fg&amp;quot;, &amp;quot;123&amp;quot;]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;//IE8 이하&lt;/span&gt;
+&lt;span class=&quot;token string&quot;&gt;&apos;   ab c d e   fg 123   &apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;//[&quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;ab&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;, &quot;&quot;, &quot;&quot;, &quot;fg&quot;, &quot;123&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;]&lt;/span&gt;
+&lt;span class=&quot;token string&quot;&gt;&apos;   ab c d e   fg 123   &apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token regex&quot;&gt;/\s/&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;//[&quot;ab&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;, &quot;fg&quot;, &quot;123&quot;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;위 방식의 경우 동일하게 스페이스 문자를 기준으로 자르도록 하였다. 그러나 결과는 다르게 발생되었다. 문자열로 공백 문자를 인자로 준 경우 empty string값이 포함되어 배열이 반환되었으나 정규식을 사용한 경우 &quot;&quot;인 값들이 제외되고 배열이 반환되었다. 이를 해결하고자 다음과 같은 방안을 세우고 시도를 해보았다.&lt;/p&gt;
 &lt;h2 id=&quot;해결방안&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%95%B4%EA%B2%B0%EB%B0%A9%EC%95%88&quot; aria-label=&quot;해결방안 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;해결방안&lt;/h2&gt;
 &lt;ol&gt;
@@ -33,7 +30,7 @@ var reg = new RegExp(&quot;abc&quot;);&lt;/p&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;del&gt;정규식 문법을 수정&lt;/del&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;다양한 방법으로 조건을 변경하였으나 &quot;&quot;값이 제외되어 반환되었다.
+&lt;li&gt;다양한 방법으로 조건을 변경하였으나 &quot;&quot;값이 제외되어 반환되었다.&lt;br&gt;
 ex) /(\s)/, /[\s\xA0]/, / /g, /[ \f\n\r\t\v]/, /\u0020/(공백문자 유니코드)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -41,17 +38,15 @@ ex) /(\s)/, /[\s\xA0]/, / /g, /[ \f\n\r\t\v]/, /\u0020/(공백문자 유니코�
 &lt;p&gt;위와 같은 해결방안을 세우고 시도하였으나 &quot;&quot;값이 제외되고 반환되었다. 따로 해결이 가능한 부분이 없었으며 다음과 같은 결론을 내렸다.&lt;/p&gt;
 &lt;h2 id=&quot;처리결과&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%B2%98%EB%A6%AC%EA%B2%B0%EA%B3%BC&quot; aria-label=&quot;처리결과 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;처리결과&lt;/h2&gt;
 &lt;p&gt;우선적으로 고객이 제외한 js파일에서 String.split함수에 대해서 오버라이딩이 되어있어 IE8이하에서 split(/\s/)시 &quot;&quot;값이 포함된 배열이 반환되었다. 이러한 부분에 대해서 고객에게 split함수에 대해서 오버라이딩된 코드를 적용하도록 가이드하였다. 만약, 외부에서 IE8이하 브라우저를 지원해야하는 경우가 존재한다면 아래의 코드를 적용하면 된다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;코드&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;/*!
+&lt;details&gt;&lt;summary&gt;코드&lt;/summary&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/*!
  * Cross-Browser Split 1.1.1
- * Copyright 2007-2012 Steven Levithan &amp;lt;stevenlevithan.com&amp;gt;
+ * Copyright 2007-2012 Steven Levithan &amp;lt;stevenlevithan.com&gt;
  * Available under the MIT License
  * ECMAScript compliant, uniform cross-browser split method
- */
+ */&lt;/span&gt;
 
-/**
+&lt;span class=&quot;token comment&quot;&gt;/**
  * Splits a string into an array of strings using a regex or string separator. Matches of the
  * separator are not included in the result array. However, if `separator` is a regex that contains
  * capturing groups, backreferences are spliced into the result each time `separator` is matched.
@@ -64,105 +59,109 @@ ex) /(\s)/, /[\s\xA0]/, / /g, /[ \f\n\r\t\v]/, /\u0020/(공백문자 유니코�
  * @example
  *
  * // Basic use
- * split(&amp;#39;a b c d&amp;#39;, &amp;#39; &amp;#39;);
- * // -&amp;gt; [&amp;#39;a&amp;#39;, &amp;#39;b&amp;#39;, &amp;#39;c&amp;#39;, &amp;#39;d&amp;#39;]
+ * split(&apos;a b c d&apos;, &apos; &apos;);
+ * // -&gt; [&apos;a&apos;, &apos;b&apos;, &apos;c&apos;, &apos;d&apos;]
  *
  * // With limit
- * split(&amp;#39;a b c d&amp;#39;, &amp;#39; &amp;#39;, 2);
- * // -&amp;gt; [&amp;#39;a&amp;#39;, &amp;#39;b&amp;#39;]
+ * split(&apos;a b c d&apos;, &apos; &apos;, 2);
+ * // -&gt; [&apos;a&apos;, &apos;b&apos;]
  *
  * // Backreferences in result array
- * split(&amp;#39;..word1 word2..&amp;#39;, /([a-z]+)(\d+)/i);
- * // -&amp;gt; [&amp;#39;..&amp;#39;, &amp;#39;word&amp;#39;, &amp;#39;1&amp;#39;, &amp;#39; &amp;#39;, &amp;#39;word&amp;#39;, &amp;#39;2&amp;#39;, &amp;#39;..&amp;#39;]
- */
-var split;
+ * split(&apos;..word1 word2..&apos;, /([a-z]+)(\d+)/i);
+ * // -&gt; [&apos;..&apos;, &apos;word&apos;, &apos;1&apos;, &apos; &apos;, &apos;word&apos;, &apos;2&apos;, &apos;..&apos;]
+ */&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; split&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
-// Avoid running twice; that would break the `nativeSplit` reference
-split = split || function (undef) {
+&lt;span class=&quot;token comment&quot;&gt;// Avoid running twice; that would break the `nativeSplit` reference&lt;/span&gt;
+split &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;
+  split &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;undef&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; nativeSplit &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;prototype&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;split&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      compliantExecNpcg &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/()??/&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;exec&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; undef&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// NPCG: nonparticipating capturing group&lt;/span&gt;
+      self&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
-    var nativeSplit = String.prototype.split,
-        compliantExecNpcg = /()??/.exec(&amp;quot;&amp;quot;)[1] === undef, // NPCG: nonparticipating capturing group
-        self;
+    &lt;span class=&quot;token function-variable function&quot;&gt;self&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;str&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; separator&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; limit&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token comment&quot;&gt;// If `separator` is not a regex, use `nativeSplit`&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Object&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;prototype&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;call&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;separator&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;!==&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;[object RegExp]&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;nativeSplit&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;call&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;str&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; separator&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; limit&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; output &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        flags &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;
+          &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;separator&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;ignoreCase &lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;i&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt;
+          &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;separator&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;multiline &lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;m&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt;
+          &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;separator&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;extended &lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;x&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// Proposed for ES6&lt;/span&gt;
+          &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;separator&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;sticky &lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;y&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// Firefox 3+&lt;/span&gt;
+        lastLastIndex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token comment&quot;&gt;// Make `global` and avoid `lastIndex` issues by working with a copy&lt;/span&gt;
+        separator &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;RegExp&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;separator&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;source&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; flags &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;g&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        separator2&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        match&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        lastIndex&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        lastLength&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+      str &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// Type-convert&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;compliantExecNpcg&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token comment&quot;&gt;// Doesn&apos;t need flags gy, but they don&apos;t hurt&lt;/span&gt;
+        separator2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;RegExp&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;^&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; separator&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;source &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;$(?!\\s)&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; flags&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;token comment&quot;&gt;/* Values for `limit`, per the spec:
+       * If undefined: 4294967295 // Math.pow(2, 32) - 1
+       * If 0, Infinity, or NaN: 0
+       * If positive number: limit = Math.floor(limit); if (limit &gt; 4294967295) limit -= 4294967296;
+       * If negative number: 4294967296 - Math.floor(Math.abs(limit))
+       * If other: Type-convert, then use the above rules
+       */&lt;/span&gt;
+      limit &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;
+        limit &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; undef
+          &lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&gt;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// Math.pow(2, 32) - 1&lt;/span&gt;
+          &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; limit &lt;span class=&quot;token operator&quot;&gt;&gt;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// ToUint32(limit)&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;match &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; separator&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;exec&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;str&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token comment&quot;&gt;// `separator.lastIndex` is not reliable cross-browser&lt;/span&gt;
+        lastIndex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; match&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;index &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; match&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;lastIndex &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; lastLastIndex&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+          output&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;str&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;slice&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;lastLastIndex&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; match&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;index&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+          &lt;span class=&quot;token comment&quot;&gt;// Fix browsers whose `exec` methods don&apos;t consistently return `undefined` for&lt;/span&gt;
+          &lt;span class=&quot;token comment&quot;&gt;// nonparticipating capturing groups&lt;/span&gt;
+          &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;compliantExecNpcg &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; match&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            match&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;separator2&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+              &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; arguments&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arguments&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; undef&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                  match&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; undef&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+                &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+              &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+          &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+          &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;match&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; match&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;index &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; str&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token class-name&quot;&gt;Array&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;prototype&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;apply&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;output&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; match&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;slice&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+          &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+          lastLength &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; match&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+          lastLastIndex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; lastIndex&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+          &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;output&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length &lt;span class=&quot;token operator&quot;&gt;&gt;=&lt;/span&gt; limit&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+          &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;separator&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;lastIndex &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; match&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;index&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+          separator&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;lastIndex&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// Avoid an infinite loop&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;lastLastIndex &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; str&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;lastLength &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;separator&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+          output&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        output&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;str&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;slice&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;lastLastIndex&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; output&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; limit &lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; output&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;slice&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; limit&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; output&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
-    self = function (str, separator, limit) {
-        // If `separator` is not a regex, use `nativeSplit`
-        if (Object.prototype.toString.call(separator) !== &amp;quot;[object RegExp]&amp;quot;) {
-            return nativeSplit.call(str, separator, limit);
-        }
-        var output = [],
-            flags = (separator.ignoreCase ? &amp;quot;i&amp;quot; : &amp;quot;&amp;quot;) +
-                    (separator.multiline  ? &amp;quot;m&amp;quot; : &amp;quot;&amp;quot;) +
-                    (separator.extended   ? &amp;quot;x&amp;quot; : &amp;quot;&amp;quot;) + // Proposed for ES6
-                    (separator.sticky     ? &amp;quot;y&amp;quot; : &amp;quot;&amp;quot;), // Firefox 3+
-            lastLastIndex = 0,
-            // Make `global` and avoid `lastIndex` issues by working with a copy
-            separator = new RegExp(separator.source, flags + &amp;quot;g&amp;quot;),
-            separator2, match, lastIndex, lastLength;
-        str += &amp;quot;&amp;quot;; // Type-convert
-        if (!compliantExecNpcg) {
-            // Doesn&amp;#39;t need flags gy, but they don&amp;#39;t hurt
-            separator2 = new RegExp(&amp;quot;^&amp;quot; + separator.source + &amp;quot;$(?!\\s)&amp;quot;, flags);
-        }
-        /* Values for `limit`, per the spec:
-         * If undefined: 4294967295 // Math.pow(2, 32) - 1
-         * If 0, Infinity, or NaN: 0
-         * If positive number: limit = Math.floor(limit); if (limit &amp;gt; 4294967295) limit -= 4294967296;
-         * If negative number: 4294967296 - Math.floor(Math.abs(limit))
-         * If other: Type-convert, then use the above rules
-         */
-        limit = limit === undef ?
-            -1 &amp;gt;&amp;gt;&amp;gt; 0 : // Math.pow(2, 32) - 1
-            limit &amp;gt;&amp;gt;&amp;gt; 0; // ToUint32(limit)
-        while (match = separator.exec(str)) {
-            // `separator.lastIndex` is not reliable cross-browser
-            lastIndex = match.index + match[0].length;
-            if (lastIndex &amp;gt; lastLastIndex) {
-                output.push(str.slice(lastLastIndex, match.index));
-                // Fix browsers whose `exec` methods don&amp;#39;t consistently return `undefined` for
-                // nonparticipating capturing groups
-                if (!compliantExecNpcg &amp;amp;&amp;amp; match.length &amp;gt; 1) {
-                    match[0].replace(separator2, function () {
-                        for (var i = 1; i &amp;lt; arguments.length - 2; i++) {
-                            if (arguments[i] === undef) {
-                                match[i] = undef;
-                            }
-                        }
-                    });
-                }
-                if (match.length &amp;gt; 1 &amp;amp;&amp;amp; match.index &amp;lt; str.length) {
-                    Array.prototype.push.apply(output, match.slice(1));
-                }
-                lastLength = match[0].length;
-                lastLastIndex = lastIndex;
-                if (output.length &amp;gt;= limit) {
-                    break;
-                }
-            }
-            if (separator.lastIndex === match.index) {
-                separator.lastIndex++; // Avoid an infinite loop
-            }
-        }
-        if (lastLastIndex === str.length) {
-            if (lastLength || !separator.test(&amp;quot;&amp;quot;)) {
-                output.push(&amp;quot;&amp;quot;);
-            }
-        } else {
-            output.push(str.slice(lastLastIndex));
-        }
-        return output.length &amp;gt; limit ? output.slice(0, limit) : output;
-    };
+    &lt;span class=&quot;token comment&quot;&gt;// For convenience&lt;/span&gt;
+    &lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;prototype&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function-variable function&quot;&gt;split&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;separator&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; limit&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; separator&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; limit&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
-    // For convenience
-    String.prototype.split = function (separator, limit) {
-        return self(this, separator, limit);
-    };
-
-    return self;
-
-}();&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;참고자료&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%B0%B8%EA%B3%A0%EC%9E%90%EB%A3%8C&quot; aria-label=&quot;참고자료 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;참고자료&lt;/h3&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; self&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/details&gt;
+&lt;h2 id=&quot;참고자료&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%B0%B8%EA%B3%A0%EC%9E%90%EB%A3%8C&quot; aria-label=&quot;참고자료 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;참고자료&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;정규식 테스트 사이트&lt;/p&gt;
