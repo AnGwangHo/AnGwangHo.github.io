@@ -92,7 +92,7 @@ keywords:
   export default App;
   ```
 
-- App.tsx에서 기존의 태그들을 삭제 후 Header라는 함수형 컴포넌트에 title properyt에 값을 넣어 typescript를 테스트하고자 합니다.
+- App.tsx에서 기존의 태그들을 삭제 후 Header라는 함수형 컴포넌트에 title property에 값을 넣어 typescript를 테스트하고자 합니다.
 
 - 현재, 코드상 title에 string값을 인자로 넘겨주고 있습니다. 만약, string이 아닌 값을 넣어 줄 시 tool상에서 다음과 같은 error를 표시합니다.
 
