@@ -35,7 +35,7 @@ keywords:
   /*전역 스코프*/
   var text = "Hello World!"; //전역 변수
   function echo() {
-  console.log(text); //전역 변수 text를 호출
+    console.log(text); //전역 변수 text를 호출
   }
   console.log(text); //"Hellow World!"
   echo(); //"Hellow World!"
@@ -46,7 +46,7 @@ keywords:
 
   ```Javascript
   if (true) {
-      var text = "Hello World!"; //전역 변수
+    var text = "Hello World!"; //전역 변수
   }
   console.log(text); //"Hellow World!"
   ```
@@ -66,8 +66,8 @@ keywords:
   ```Javascript
   /*함수 스코프*/
   function echo() {
-  var text = "Hello World!"; //지역 변수
-  console.log(text); //전역 변수 text를 호출
+    var text = "Hello World!"; //지역 변수
+    console.log(text); //전역 변수 text를 호출
   }
   echo(); //"Hello World!"
   console.log(text); //Uncaught ReferenceError: text is not defined
@@ -75,8 +75,8 @@ keywords:
   /*동일한 이름의 변수가 2개 존재 시*/
   var text = "global Hello World!";
   function echo() {
-  var text = "local Hello World!";
-  console.log(text); // "local Hello World!"
+    var text = "local Hello World!";
+    console.log(text); // "local Hello World!"
   }
   console.log(text); // "global Hello World!"
   ```
@@ -88,12 +88,12 @@ keywords:
   ```Javascript
   /*블록 스코프*/
   if (true) {
-  var a = 1; //전역 변수
-  const b = 2; //블록 변수
-  let c = 3; //블록 변수
-  console.log(a); // 1
-  console.log(b); // 2
-  console.log(c); // 3
+    var a = 1; //전역 변수
+    const b = 2; //블록 변수
+    let c = 3; //블록 변수
+    console.log(a); // 1
+    console.log(b); // 2
+    console.log(c); // 3
   }
 
   console.log(a); // 1
@@ -114,9 +114,9 @@ keywords:
   var a = 1; //전역 변수
 
   function echo() {
-  //선언하지 않은 변수
-  text = "Hello World!"; //window.text로 property 추가 됨
-  console.log(text); //"Hello World!"
+    //선언하지 않은 변수
+    text = "Hello World!"; //window.text로 property 추가 됨
+    console.log(text); //"Hello World!"
   }
 
   echo(); //"Hello World!"
