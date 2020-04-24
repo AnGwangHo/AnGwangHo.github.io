@@ -42,7 +42,9 @@ keywords:
 
 ### 코드
 
-1.
+1. keyboards, drives의 각 아이템 별 합한 값을 구해야 함
+2. 각 아이템 별 합한 값 중 b를 넘는 값은 -1를 반환
+3. 2에서 구한 배열 중 가장 큰 값을 반환
 
 ```javascript
 function getMoneySpent(keyboards, drives, b) {
