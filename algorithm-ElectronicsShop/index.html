@@ -569,7 +569,11 @@
 </table>
 </blockquote>
 <h3 id="코드" style="position:relative;"><a href="#%EC%BD%94%EB%93%9C" aria-label="코드 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>코드</h3>
-<p>1.</p>
+<ol>
+<li>keyboards, drives의 각 아이템 별 합한 값을 구해야 함</li>
+<li>각 아이템 별 합한 값 중 b를 넘는 값은 -1를 반환</li>
+<li>2에서 구한 배열 중 가장 큰 값을 반환</li>
+</ol>
 <div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">getMoneySpent</span><span class="token punctuation">(</span><span class="token parameter">keyboards<span class="token punctuation">,</span> drives<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token keyword">let</span> sum_array <span class="token operator">=</span> keyboards<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">keyboard</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
     <span class="token keyword">const</span> max <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span>
