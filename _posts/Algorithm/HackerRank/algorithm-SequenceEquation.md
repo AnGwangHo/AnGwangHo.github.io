@@ -1,6 +1,6 @@
 ---
 title: Sequence Equation(javascript)
-date: 2020-05-24
+date: 2020-05-25
 tags:
   - 알고리즘
   - HackerRank
