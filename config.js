@@ -15,7 +15,7 @@ module.exports = {
   /** Home > Bio information*/
   comment: 'Front-End 개발자',
   name: 'An GwangHo',
-  company: 'Tobesoft',
+  company: 'KakaoPay',
   location: 'Korea',
   email: 'akh4444@nate.com',
   website: 'https://angwangho.github.io/',           // ex.'https://junhobaik.github.io'
