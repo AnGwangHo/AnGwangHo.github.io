@@ -3,7 +3,6 @@
   "private": true,
   "description": "Gatsby Blog, 'Borderless' Theme By Junhobaik",
   "version": "3.0.0",
-  "author": "JunhoBaik",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "@fortawesome/free-brands-svg-icons": "^5.14.0",
@@ -85,9 +84,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/junhobaik/junhobaik.github.io"
+    "url": "https://github.com/AnGwangHo/AnGwangHo.github.io"
   },
   "bugs": {
-    "url": "https://github.com/junhobaik/junhobaik.github.io/issues"
+    "url": "https://github.com/AnGwangHo/AnGwangHo.github.io/issues"
   }
 }
