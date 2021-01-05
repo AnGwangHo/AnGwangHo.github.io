@@ -32,7 +32,7 @@ module.exports = {
   /** Optional */
   googleAnalytics: 'UA-152733182-2',     // Google Analytics TrackingID. ex.'UA-123456789-0'
   googleSearchConsole: 'ajk2O5QdXHDdidvXZAtDcuue5yoWbbeFcu-EGZYATIo', // content value in HTML tag of google search console ownership verification. ex.'w-K42k14_I4ApiQKuVPbCRVV-GxlrqWxYoqO94KMbKo'
-  googleAdsenseSlot: '',   // Google Adsense Slot. ex.'5214956675'
+  googleAdsenseSlot: '7109564916675445',   // Google Adsense Slot. ex.'5214956675'
   googleAdsenseClient: 'ca-pub-7109564916675445', // Google Adsense Client. ex.'ca-pub-5001380215831339'
     // Please correct the adsense client number(ex.5001380215831339) in the './static/ads.txt' file.
 };
